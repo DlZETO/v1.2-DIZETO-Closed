@@ -1,0 +1,49 @@
+@font-face {
+  font-family: "public-sans-semibold";
+  src: url(../assets/fonts/Public-Sans/static/PublicSans-SemiBold.ttf);
+}
+
+body {
+  font-family: sans-serif, Helvetica, 'public-sans-semibold';
+}
+
+#loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+}
+
+#loading img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.red-line-h {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #dc2626;
+  width: 100px;
+  height: 2px;
+}
+
+.red-line-h-portfolio {
+  background-color: #dc2626;
+  width: 100%;
+  height: 2px;
+}
+
+.grey-line-v {
+  border-left: 2px solid grey;
+  height: 60px;
+  left: 50%;
+  top: 0;
+}
+
+.active {
+  color: rgb(220 38 38);
+}

@@ -1,0 +1,24 @@
+{
+  "name": "dizeto",
+  "version": "0.1.0",
+  "private": true,
+  "main": "server.js",
+  "scripts": {
+    "npm install": "npm i",
+    "npm update": "npm update",
+    "dev": "next dev",
+    "go": "next start",
+    "build": "next build",
+    "start": "NODE_ENV=production node server.js",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "13.3.0",
+    "next-themes": "^0.2.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.8.0",
+    "react-scroll": "^1.8.9",
+    "sharp": "^0.32.0"
+  }
+}
