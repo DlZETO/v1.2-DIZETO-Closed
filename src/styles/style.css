@@ -8,14 +8,14 @@ body {
 }
 
 .grd-light {
-  background: linear-gradient(95deg, #ffdcdc, white, white, #ffdcdc);
+  background: linear-gradient(95deg, #ffdcdc, white, #ffdcdc);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
   position: center;
 }
 
 .grd-dark {
-  background: linear-gradient(95deg, #402227, #23272d, #23272d, #402227);
+  background: linear-gradient(95deg, #402227, #23272d, #402227);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
   position: center;
