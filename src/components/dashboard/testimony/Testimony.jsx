@@ -42,7 +42,7 @@ export default function Testimony() {
       source: gibranfaras,
     },
     {
-      name: "Neneng Camidah",
+      name: "Neneng Chamidah",
       status: "- Eid Photo Shoot -",
       comment: "Despite the fact that the photo was taken at my house, the outcome is satisfactory",
       source: nenengcamidah,
