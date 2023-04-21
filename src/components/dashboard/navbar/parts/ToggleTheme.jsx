@@ -3,7 +3,6 @@ import { useTheme } from "next-themes";
 import { FaSun } from "react-icons/fa";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { IoDesktop } from "react-icons/io5";
-import { HiOutlineBarsArrowDown } from "react-icons/hi2";
 
 export default function ToggleTheme() {
   const { theme, setTheme } = useTheme("");
@@ -12,7 +11,15 @@ export default function ToggleTheme() {
 
   useEffect(() => {
     setMounted(true);
-  }, []);
+    const body = document.querySelector("body");
+    if (theme === "light") {
+      body.classList.add("grd-light");
+      body.classList.remove("grd-dark");
+    } else {
+      body.classList.add("grd-dark");
+      body.classList.remove("grd-light");
+    }
+  }, [theme]);
 
   if (!mounted) {
     return null;
@@ -21,7 +28,15 @@ export default function ToggleTheme() {
   return (
     <div className="flex items-center justify-end">
       <div className="flex h-9 w-9 cursor-pointer items-center justify-center hover:text-red-600 lg:hidden" onClick={() => setIsOpen(!isOpen)}>
-        <HiOutlineBarsArrowDown size={30} />
+        <div className={`${theme === "light" ? "" : "hidden"}`}>
+          <FaSun size={20} />
+        </div>
+        <div className={`${theme === "dark" ? "" : "hidden"}`}>
+          <BsFillMoonStarsFill size={18} />
+        </div>
+        <div className={`${theme === "system" ? "" : "hidden"}`}>
+          <IoDesktop size={20} />
+        </div>
       </div>
       <div className="hidden lg:block">
         <div className="flex h-11 w-40 items-center justify-end gap-x-5">

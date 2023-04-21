@@ -7,6 +7,34 @@ body {
   font-family: sans-serif, Helvetica, 'public-sans-semibold';
 }
 
+.grd-light {
+  background: linear-gradient(-100deg, #ffdcdc, white, #ffdcdc, white);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  position: center;
+}
+
+.grd-dark {
+  background: linear-gradient(-100deg, #402227, #23272d, #402227, #23272d);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  position: center;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 #loading {
   position: fixed;
   top: 0;
