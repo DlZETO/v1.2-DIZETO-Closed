@@ -23,7 +23,7 @@ export default function Images() {
         <li key={index} className="hover:shadow-md hover:shadow-black/30 dark:hover:shadow-md dark:hover:shadow-white/30">
           <div className="flex items-center justify-center rounded-sm border-2 border-gray-200 bg-white hover:border-red-600 dark:border-gray-700 dark:bg-gray-700 dark:hover:border-red-600">
             <div className="p-0.5">
-              <a href={`https://image.dizeto.com/assets/uploads/dashboard/f1/${photo}`} data-lightbox="dashboart" data-title="&copy; Copyright 2022 - DIZETO">
+              <a href={`https://images.dizeto.com/assets/uploads/dashboard/f1/${photo}`} data-lightbox="dashboart" data-title="&copy; Copyright 2022 - DIZETO">
                 <Image className="h-auto rounded-sm" width={360} height={0} placeholder="blur" src={require(`dizeto/assets/uploads/dashboard/f1/thumbnail/${photo}`)} alt={`Mita's Birthday`} />
               </a>
             </div>
