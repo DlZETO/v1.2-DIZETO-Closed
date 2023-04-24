@@ -392,7 +392,7 @@ export default function Portfolio() {
               <li key={data} className="mb-4 hover:shadow-md hover:shadow-black/30 dark:hover:shadow-md dark:hover:shadow-white/30">
                 <div className="flex items-center justify-center border-2 border-gray-200 bg-white hover:border-red-600 dark:border-gray-700 dark:bg-gray-700 dark:hover:border-red-600 ">
                   <div className="p-0.5">
-                    <a href={`https://img.dizeto.com/assets/uploads/${source[index].fldr}/${data}`} data-lightbox={source[index].alt} data-title={source[index].cc}>
+                    <a href={`https://image.dizeto.com/assets/uploads/${source[index].fldr}/${data}`} data-lightbox={source[index].alt} data-title={source[index].cc}>
                       <Image className="h-auto" src={require(`dizeto/assets/uploads/${source[index].fldr}/thumbnail/${data}`)} placeholder="blur" alt={source[index].alt} width={360} height={0} />
                     </a>
                   </div>
