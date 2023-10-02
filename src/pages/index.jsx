@@ -24,7 +24,7 @@ export default function Dashboard() {
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
         <title>DIZETO | PROFESSIONAL SERVICES</title>
         <meta name="robots" content="index,follow" />
-        <meta name="author" content="DIZETO" />
+        <meta name="author" content="Gede Dewo Wahyu M.W" />
         <meta name="description" content="Dizeto is a vendor that offers photography, videography, talent, and music services." />
         <meta
           name="keywords"
@@ -34,8 +34,8 @@ export default function Dashboard() {
         <meta property="og:type" content="website" />
         <meta property="og:title" content="DIZETO | PROFESSIONAL SERVICES" />
         <meta property="og:description" content="Dizeto is a vendor that offers photography, videography, talent, and music services." />
-        <meta property="og:url" content="https://www.dizeto.com" />
-        <meta property="og:image" content="https://www.dizeto.com/favicon.ico" />
+        <meta property="og:url" content="https://dizeto.vercel.app" />
+        <meta property="og:image" content="https://dizeto.vercel.app/favicon.ico" />
         {/* <!-- End of Open Graph --> */}
       </Head>
       {/* <!-- Google tag (gtag.js) --> */}

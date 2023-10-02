@@ -301,13 +301,16 @@ export default function Portfolio() {
         <meta httpEquiv="Cache-Control" content="max-age=2629440, public" />
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
         <title>{source[index].tit1}</title>
-        <meta name="author" content="DIZETO" />
+        <meta name="author" content="Gede Dewo Wahyu M.W" />
         <meta name="description" content="Please take a look around and get in touch if you have any questions or want to discuss any projects." />
         {/* <!-- Open Graph --> */}
         <meta property="og:type" content="website" />
         <meta property="og:title" content="DIZETO | PORTFOLIO" />
-        <meta property="og:description" content="Please take a look around and get in touch if you have any questions or want to discuss any projects." />
-        <meta property="og:image" content="https://www.dizeto.com/favicon.ico" />
+        <meta
+          property="og:description"
+          content="Please take a look around and get in touch if you have any questions or want to discuss any projects."
+        />
+        <meta property="og:image" content="https://dizeto.vercel.app/favicon.ico" />
         {/* <!-- End of Open Graph --> */}
       </Head>
       {/* <!-- Google tag (gtag.js) --> */}
@@ -323,7 +326,10 @@ export default function Portfolio() {
       </Script>
       {/* <!-- Google tag (gtag.js) --> */}
       <Loading />
-      <section id="top" className="container mx-auto my-10 rounded-lg border border-gray-200 bg-white shadow-md shadow-black/30 dark:border-gray-700 dark:bg-dark dark:shadow-md dark:shadow-white/30">
+      <section
+        id="top"
+        className="container mx-auto my-10 rounded-lg border border-gray-200 bg-white shadow-md shadow-black/30 dark:border-gray-700 dark:bg-dark dark:shadow-md dark:shadow-white/30"
+      >
         <div className="min-h-screen px-16 pb-14">
           <div className="flex items-center pt-10 lg:py-10">
             <div className="flex min-w-max items-center">
@@ -342,7 +348,10 @@ export default function Portfolio() {
                   const pageNumber = index + 1;
                   if (pageNumber === currentPage) {
                     return (
-                      <button key={pageNumber} className="flex h-[35px] w-[35px] items-center justify-center border-2 border-red-600 bg-red-600 font-semibold text-white">
+                      <button
+                        key={pageNumber}
+                        className="flex h-[35px] w-[35px] items-center justify-center border-2 border-red-600 bg-red-600 font-semibold text-white"
+                      >
                         {pageNumber}
                       </button>
                     );
@@ -369,7 +378,10 @@ export default function Portfolio() {
               const pageNumber = index + 1;
               if (pageNumber === currentPage) {
                 return (
-                  <button key={pageNumber} className="flex h-[35px] w-[35px] items-center justify-center border-2 border-red-600 bg-red-600 font-semibold text-white">
+                  <button
+                    key={pageNumber}
+                    className="flex h-[35px] w-[35px] items-center justify-center border-2 border-red-600 bg-red-600 font-semibold text-white"
+                  >
                     {pageNumber}
                   </button>
                 );
@@ -392,8 +404,19 @@ export default function Portfolio() {
               <li key={data} className="mb-4 hover:shadow-md hover:shadow-black/30 dark:hover:shadow-md dark:hover:shadow-white/30">
                 <div className="flex items-center justify-center border-2 border-gray-200 bg-white hover:border-red-600 dark:border-gray-700 dark:bg-gray-700 dark:hover:border-red-600 ">
                   <div className="p-0.5">
-                    <a href={`https://dizeto-images.vercel.app/assets/uploads/${source[index].fldr}/${data}`} data-lightbox={source[index].alt} data-title={source[index].cc}>
-                      <Image className="h-auto" src={require(`dizeto/assets/uploads/${source[index].fldr}/thumbnail/${data}`)} placeholder="blur" alt={source[index].alt} width={360} height={0} />
+                    <a
+                      href={`https://dizeto-images.vercel.app/assets/uploads/${source[index].fldr}/${data}`}
+                      data-lightbox={source[index].alt}
+                      data-title={source[index].cc}
+                    >
+                      <Image
+                        className="h-auto"
+                        src={require(`dizeto/assets/uploads/${source[index].fldr}/thumbnail/${data}`)}
+                        placeholder="blur"
+                        alt={source[index].alt}
+                        width={360}
+                        height={0}
+                      />
                     </a>
                   </div>
                 </div>

@@ -176,7 +176,7 @@ export default function ListPortfolio() {
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
         <title>DIZETO | LIST PORTFOLIO</title>
         <meta name="robots" content="index,follow" />
-        <meta name="author" content="DIZETO" />
+        <meta name="author" content="Gede Dewo Wahyu M.W" />
         <meta
           name="description"
           content="See our portfolio for examples of our work. We believe that our portfolio demonstrates our abilities and creativity."
@@ -189,8 +189,8 @@ export default function ListPortfolio() {
           property="og:description"
           content="See our portfolio for examples of our work. We believe that our portfolio demonstrates our abilities and creativity."
         />
-        <meta property="og:url" content="https://www.dizeto.com/listportfolio" />
-        <meta property="og:image" content="https://www.dizeto.com/favicon.ico" />
+        <meta property="og:url" content="https://dizeto.vercel.app/listportfolio" />
+        <meta property="og:image" content="https://dizeto.vercel.app/favicon.ico" />
         {/* <!-- End of Open Graph --> */}
       </Head>
       {/* <!-- Google tag (gtag.js) --> */}
