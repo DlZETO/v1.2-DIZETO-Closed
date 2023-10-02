@@ -34,7 +34,12 @@ export default function Contact() {
             <FaEnvelope />
           </i>
           <strong>Email:</strong>
-          <a className="ml-2 hover:text-red-600" href="https://mail.google.com/mail/u/?authuser=dizetobs@gmail.com" target="_blank" rel="noopener noreferrer">
+          <a
+            className="ml-2 hover:text-red-600"
+            href="https://mail.google.com/mail/u/?authuser=dizetobs@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             dizetobs@gmail.com
           </a>
         </li>
@@ -44,8 +49,8 @@ export default function Contact() {
             <FaPhoneAlt />
           </i>
           <strong>Phone:</strong>
-          <a className="ml-2 hover:text-red-600" href="https://wa.me/082119596508" target="_blank" rel="noopener noreferrer">
-            +62 821-1959-6508
+          <a className="ml-2 hover:text-red-600" href="" target="_blank" rel="noopener noreferrer">
+            +62 000-0000-0000
           </a>
         </li>
 
@@ -54,7 +59,7 @@ export default function Contact() {
             <TbWorldWww />
           </i>
           <strong>Website:</strong>
-          <a className="ml-2 hover:text-red-600" href="https://www.dizeto.com" target="_blank" rel="noopener noreferrer">
+          <a className="ml-2 hover:text-red-600" href="https://dizeto.vercel.app/" target="_blank" rel="noopener noreferrer">
             https://www.dizeto.com/
           </a>
         </li>
