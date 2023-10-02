@@ -177,12 +177,18 @@ export default function ListPortfolio() {
         <title>DIZETO | LIST PORTFOLIO</title>
         <meta name="robots" content="index,follow" />
         <meta name="author" content="DIZETO" />
-        <meta name="description" content="See our portfolio for examples of our work. We believe that our portfolio demonstrates our abilities and creativity." />
+        <meta
+          name="description"
+          content="See our portfolio for examples of our work. We believe that our portfolio demonstrates our abilities and creativity."
+        />
         <meta name="keywords" content="dizeto , portofolio dizeto, portfolio dizeto" />
         {/* <!-- Open Graph --> */}
         <meta property="og:type" content="website" />
         <meta property="og:title" content="DIZETO | LIST PORTFOLIO" />
-        <meta property="og:description" content="See our portfolio for examples of our work. We believe that our portfolio demonstrates our abilities and creativity." />
+        <meta
+          property="og:description"
+          content="See our portfolio for examples of our work. We believe that our portfolio demonstrates our abilities and creativity."
+        />
         <meta property="og:url" content="https://www.dizeto.com/listportfolio" />
         <meta property="og:image" content="https://www.dizeto.com/favicon.ico" />
         {/* <!-- End of Open Graph --> */}
@@ -218,7 +224,10 @@ export default function ListPortfolio() {
                   const pageNumber = index + 1;
                   if (pageNumber === currentPage) {
                     return (
-                      <button key={pageNumber} className="flex h-[35px] w-[35px] items-center justify-center border-2 border-red-600 bg-red-600 font-semibold text-white">
+                      <button
+                        key={pageNumber}
+                        className="flex h-[35px] w-[35px] items-center justify-center border-2 border-red-600 bg-red-600 font-semibold text-white"
+                      >
                         {pageNumber}
                       </button>
                     );
@@ -245,7 +254,10 @@ export default function ListPortfolio() {
               const pageNumber = index + 1;
               if (pageNumber === currentPage) {
                 return (
-                  <button key={pageNumber} className="flex h-[35px] w-[35px] items-center justify-center border-2 border-red-600 bg-red-600 font-semibold text-white">
+                  <button
+                    key={pageNumber}
+                    className="flex h-[35px] w-[35px] items-center justify-center border-2 border-red-600 bg-red-600 font-semibold text-white"
+                  >
                     {pageNumber}
                   </button>
                 );
@@ -270,7 +282,14 @@ export default function ListPortfolio() {
                   <Link href={`/listportfolio/section/${item.link}`}>
                     <div className="rounded-md border-2 border-gray-300 bg-white hover:border-red-600 dark:border-gray-700 dark:bg-dark dark:hover:border-red-600">
                       <div className="m-2">
-                        <Image className="rounded-md" placeholder="blur" src={require(`dizeto/assets/uploads/${item.image}`)} alt={item.title} width={300} height={300} />
+                        <Image
+                          className="rounded-md"
+                          placeholder="blur"
+                          src={require(`dizeto/assets/uploads/${item.image}`)}
+                          alt={item.title}
+                          width={300}
+                          height={300}
+                        />
                       </div>
                       <div className="red-line-h">
                         {activeId === item.id && (
@@ -292,7 +311,7 @@ export default function ListPortfolio() {
                           className="ml-auto flex items-center justify-center p-2 text-gray-500/80 hover:text-red-600 dark:text-gray-400 dark:hover:text-red-600"
                           onClick={(e) => {
                             e.preventDefault();
-                            navigator.clipboard.writeText(`https://www.dizeto.com/listportfolio/section/${item.link}`);
+                            navigator.clipboard.writeText(`https://dizeto.vercel.app/listportfolio/section/${item.link}`);
                             setActiveId(item.id);
                             clipBoard();
                           }}
