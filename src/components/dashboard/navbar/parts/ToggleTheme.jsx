@@ -60,7 +60,7 @@ export default function ToggleTheme() {
           >
             <BsFillMoonStarsFill size={18} />
           </div>
-          <div
+          {/* <div
             className={`cursor-pointer ${
               theme === "system" ? "text-red-600" : "text-black hover:text-red-600 dark:text-white dark:hover:text-red-600"
             } flex h-8 w-8 items-center justify-center rounded-full p-1.5`}
@@ -69,13 +69,15 @@ export default function ToggleTheme() {
             }}
           >
             <IoDesktop size={20} />
-          </div>
+          </div> */}
         </div>
       </div>
       {isOpen && (
         <div className="absolute right-5 top-[80px] z-10 flex h-fit w-48 flex-col items-center justify-center gap-y-5 rounded-lg border-2 border-gray-200 bg-white py-3 shadow-md shadow-black/30 dark:border-gray-700 dark:bg-dark dark:shadow-md dark:shadow-white/30 lg:hidden">
           <div
-            className={`cursor-pointer ${theme === "light" ? "text-red-600" : "text-black hover:text-red-600 dark:text-white dark:hover:text-red-600"} flex items-center justify-center`}
+            className={`cursor-pointer ${
+              theme === "light" ? "text-red-600" : "text-black hover:text-red-600 dark:text-white dark:hover:text-red-600"
+            } flex items-center justify-center`}
             onClick={() => {
               setTheme("light");
               setIsOpen(false);
@@ -86,7 +88,9 @@ export default function ToggleTheme() {
           </div>
 
           <div
-            className={`cursor-pointer ${theme === "dark" ? "text-red-600" : "text-black hover:text-red-600 dark:text-white dark:hover:text-red-600"} flex items-center justify-center`}
+            className={`cursor-pointer ${
+              theme === "dark" ? "text-red-600" : "text-black hover:text-red-600 dark:text-white dark:hover:text-red-600"
+            } flex items-center justify-center`}
             onClick={() => {
               setTheme("dark");
               setIsOpen(false);
@@ -96,8 +100,10 @@ export default function ToggleTheme() {
             <span className="ml-3 text-xl font-semibold">Dark</span>
           </div>
 
-          <div
-            className={`cursor-pointer ${theme === "system" ? "text-red-600" : "text-black hover:text-red-600 dark:text-white dark:hover:text-red-600"} flex items-center justify-center`}
+          {/* <div
+            className={`cursor-pointer ${
+              theme === "system" ? "text-red-600" : "text-black hover:text-red-600 dark:text-white dark:hover:text-red-600"
+            } flex items-center justify-center`}
             onClick={() => {
               setTheme("system");
               setIsOpen(false);
@@ -105,7 +111,7 @@ export default function ToggleTheme() {
           >
             <IoDesktop size={25} />
             <span className="ml-3 text-xl font-semibold">System</span>
-          </div>
+          </div> */}
         </div>
       )}
     </div>
