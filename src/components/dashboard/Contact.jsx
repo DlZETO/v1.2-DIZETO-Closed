@@ -60,7 +60,7 @@ export default function Contact() {
           </i>
           <strong>Website:</strong>
           <a className="ml-2 hover:text-red-600" href="https://dizeto.vercel.app/" target="_blank" rel="noopener noreferrer">
-            https://www.dizeto.com/
+            https://dizeto.vercel.app/
           </a>
         </li>
       </ul>
